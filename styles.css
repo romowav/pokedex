@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
     padding: 0
     ;
 }
@@ -9,14 +9,45 @@ body{
     width: 100%;
     height: 100%;
 }
+nav{
+    background-color: rgb(148, 54, 54) !important;
+    margin: 0px;
+}
 .pokedex-search{
     max-width: 100%;
-    margin-top: 4rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 4rem;
 }
-.poke-search{
-    max-width: 50%;
-    
+.d-flex{
+    width: 20rem;
+    margin: 4rem;
+}
+.card{
+    padding: 7px;
+    background-color: #3b3863 !important;
+    color: black !important;
+}
+.descript{
+    margin: 0px 1rem !important;
+    border-bottom: 2px solid rgb(34, 34, 34);
+}
+.card ul{
+    border: none !important;
+    margin: 0px 2rem !important;
+}
+.card ul li {
+    background-color: #3b3863;
+    border-color: rgb(87, 92, 38);
+    color: black;
+    width: 12rem;
+}
+.card img{
+    border-radius: 10px;
+}
+.linktl{
+    border-top: 2px solid rgb(34, 34, 34);
+    margin: 0px 1rem !important;
 }

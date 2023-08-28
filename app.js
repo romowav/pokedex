@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
         const pokemonData = data // almacenamos los datos obtenidos en nuestra constante
         console.log(pokemonData.height)
     })
-    .catch(error => console.log('Error: ', error))
+    .catch(error => console.log(`Quien es ${pokeName}?`, error))
     
 })
 
