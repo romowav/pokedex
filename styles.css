@@ -27,7 +27,7 @@ nav{
 }
 .card{
     padding: 7px;
-    background-color: #3b3863 !important;
+    background-color: #9ba700 !important;
     color: black !important;
 }
 .descript{
@@ -39,13 +39,26 @@ nav{
     margin: 0px 2rem !important;
 }
 .card ul li {
-    background-color: #3b3863;
+    background-color: inherit;
     border-color: rgb(87, 92, 38);
     color: black;
-    width: 12rem;
+    
 }
-.card img{
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
+    height: 287px;
+    background-image: url("./images/pokemon-bg.PNG");
+    background-size: cover;
+    border: 2px solid #473499;
+}
+.card #image img{
+    border-radius: 10px;
+    max-height: 287px;
+    height: 30rem;
+    object-fit: contain;
 }
 .linktl{
     border-top: 2px solid rgb(34, 34, 34);
