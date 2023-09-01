@@ -1,6 +1,5 @@
 const urlBase = 'https://pokeapi.co/api/v2/pokemon/';
 const pokeCard = document.querySelector("#pokemon-display");
-var finalability = {};
 
 // Aqui estoy obteninedo y guardando la info que entra al search bar
 const form = document.querySelector('form');
@@ -22,24 +21,21 @@ form.addEventListener('submit', (e) => {
         const pokemonData = data // almacenamos los datos obtenidos en nuestra constante
         function pokeAbility() {
             abilidadespoke = []
-        for (let i = 0; i < pokemonData.abilities.length; i++) {
-            abilidadespoke.push(pokemonData.abilities[i].ability.name)
-        }
-        return abilidadespoke.join(' / ')
+            for (let i = 0; i < pokemonData.abilities.length; i++) {
+                abilidadespoke.push(pokemonData.abilities[i].ability.name)
+            }return abilidadespoke.join(' / ')
         }
         function pokeType() {
             tipospoke = []
-        for (let i = 0; i < pokemonData.types.length; i++) {
-            tipospoke.push(pokemonData.types[i].type.name)
-        }
-        return tipospoke.join(' / ')
+            for (let i = 0; i < pokemonData.types.length; i++) {
+                tipospoke.push(pokemonData.types[i].type.name)
+            }return tipospoke.join(' / ')
         }
         function pokeMove() {
             movespoke = []
-        for (let i = 0; i < 4; i++) {
-            movespoke.push(pokemonData.moves[i].move.name)
-        }
-        return movespoke.join(' / ')
+            for (let i = 0; i < 4; i++) {
+                movespoke.push(pokemonData.moves[i].move.name)
+            }return movespoke.join(' / ')
         }
     
         

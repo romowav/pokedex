@@ -64,3 +64,6 @@ nav{
     border-top: 2px solid rgb(34, 34, 34);
     margin: 0px 1rem !important;
 }
+.card-link{
+    color: black;
+}
